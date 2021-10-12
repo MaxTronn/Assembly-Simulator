@@ -1,0 +1,4 @@
+mov R0 $10
+cmp R0 R1
+mov R0 R6
+hlt

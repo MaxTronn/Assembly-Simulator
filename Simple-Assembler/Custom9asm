@@ -1,0 +1,13 @@
+var x
+mov R4 $4
+mov R0 $0
+mov R1 $1
+st R1 x
+loop: ld R6 x
+add R0 R0 R6
+st R0 x
+cmp R0 R4
+jgt exit
+jmp loop
+
+exit: hlt

@@ -1,0 +1,17 @@
+
+mov R0 $5
+mov R1 $1
+mov R3 $8
+
+cmp R5 R0
+jlt label1
+jmp exit
+
+label1: mov R5 $10
+
+cmp R3 R1
+jgt label2
+jmp exit
+
+label2: mov R3 $10
+exit: hlt

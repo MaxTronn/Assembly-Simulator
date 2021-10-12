@@ -1,0 +1,9 @@
+mov R0 $255
+mov R1 $1
+mov R2 R0
+mov R3 $1
+factorial: mul R1 R1 R2
+sub R2 R2 R3
+cmp R2 R3
+jgt factorial
+hlt

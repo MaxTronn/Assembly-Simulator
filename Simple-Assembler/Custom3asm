@@ -1,0 +1,20 @@
+mov R0 $10
+mov R1 $5
+mov R2 $1
+mov R3 $0
+mov R6 $0
+
+cmp R0 R6
+je exit
+cmp R1 R6
+je exit
+jmp loop
+
+loop: cmp R1 R6
+je exit
+add R3 R3 R0
+sub R1 R1 R2
+cmp R2 R6
+jgt loop
+
+exit: hlt

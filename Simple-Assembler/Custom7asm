@@ -1,0 +1,14 @@
+mov            R0     $5
+mov R1 $11
+mov R3     $8
+
+xor R5 R5 R0
+or R2 R3 R0
+and R4 R3 R0
+not R1 R1
+
+add R3 R3 R1
+sub R5 R3 R4
+mul R4 R3 R1
+mul R6 R3 R0
+hlt
